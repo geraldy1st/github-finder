@@ -312,8 +312,9 @@ img {
 }
 /* Home */
 .home-animation {
-  background-color: #eee;
-  min-height: 35vh;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
 }
 /* Forms */
 input {
@@ -422,6 +423,12 @@ footer {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+  /* Home animation */
+  .home-animation {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
   }
   /* Footer */
   footer {
