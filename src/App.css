@@ -46,6 +46,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  min-height: 82.5vh;
 }
 
 /* Text Styles*/
@@ -309,7 +310,11 @@ img {
 .round-img {
   border-radius: 50%;
 }
-
+/* Home */
+.home-animation {
+  background-color: #eee;
+  min-height: 35vh;
+}
 /* Forms */
 input {
   margin: 1.2rem 0;
@@ -378,11 +383,15 @@ table th {
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
+/* Footer */
+footer {
+  display: none;
+}
 
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
-    display: none;
+    display: none !important;
   }
 
   .grid-2,
@@ -413,5 +422,18 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+  /* Footer */
+  footer {
+    display: block;
+  }
+  footer li {
+    display: inline;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer a {
+    color: inherit !important;
   }
 }

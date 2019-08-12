@@ -7,11 +7,10 @@ const Navbar = ({ icon, title }) => {
     <nav className="navbar bg-primary">
       <h1>
         <Link to="/">
-          <i className={icon} />
-        </Link>{' '}
-        {title}
+          <i className={icon} /> {title}
+        </Link>
       </h1>
-      <ul>
+      <ul className="hide-sm">
         <li>
           <Link to="/">Home</Link>
         </li>
