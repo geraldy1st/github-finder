@@ -43,10 +43,10 @@ img {
 /* Utilities */
 .container {
   max-width: 1100px;
+  min-height: 83.3vh;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
-  min-height: 82.5vh;
 }
 
 /* Text Styles*/
@@ -388,11 +388,21 @@ table th {
 footer {
   display: none;
 }
+.users-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 1rem;
+}
 
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
     display: none !important;
+  }
+  .users-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 
   .grid-2,
@@ -426,13 +436,17 @@ footer {
   }
   /* Home animation */
   .home-animation {
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
     display: block;
   }
   /* Footer */
   footer {
     display: block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
   footer li {
     display: inline;
